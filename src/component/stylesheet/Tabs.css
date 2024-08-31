@@ -1,0 +1,197 @@
+
+.tabs-container{
+    /* background-color: #81b64c1e; */
+    height: 100vh;
+}
+
+.nav-pills .nav-link {
+    border: none;
+    background: none !important;
+    color: #000; /* Text color for tabs */
+    padding: 10px 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-pills .nav-link::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #81B64C !important; /* Green underline color */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-pills .nav-link:hover::before,
+.nav-pills .nav-link.active::before {
+    width: 100%;
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active {
+    color: #81B64C; /* Green text color for active tab */
+}
+
+
+
+.shedule-tr td, .shedule-tr th{
+    text-align: left !important;
+}
+
+.rounds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.table-heading th{
+    text-align: left !important;
+}
+
+
+.schedule-table{
+    width: 100%;
+    /* width: fit-content; */
+}
+
+.schedule-table tr td, .schedule-table tr th{
+    padding: 10px 20px;
+    text-align: left !important;
+    
+}
+
+.rounds-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.roundstable{
+    width: 100%;
+}
+
+
+ .schedule-table caption{
+    color: red !important;
+}
+
+
+.child-col1{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 450px;
+    text-align: left;
+    gap: 50px;
+    background-color: rgb(237, 237, 237);
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.child-col1 img{
+    background-color: rgba(0, 128, 0, 0.078);
+    border-radius: 8px;
+
+}
+
+.child-col1 h5{
+    font-size: 18px !important;
+    text-align: left !important;
+}
+
+.game-terms{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    /* border:  */
+    /* padding: 0 50px; */
+}
+
+
+.img-container-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px; */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    border-radius: 8px;
+}
+
+
+.quote{
+    background: linear-gradient(87deg, #0ea4d1 21.59%, #105d79 98.73%);
+    display: flex;
+    gap: 40px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+    cursor: default;
+    align-items: center !important;
+    padding: 60px;
+    margin: 30px;
+    border-radius: 12px;
+
+}
+
+.quote blockquote{
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+
+}
+
+
+iframe{
+    height: 100%;
+    height: 100vh;
+}
+
+
+.fund-money{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    width: fit-content;
+    padding: 80px 50px;
+    border-radius: 8px;
+    box-shadow: rgba(227, 227, 227, 0.24) 0px 3px 8px;
+}
+
+
+.prize-amount {
+    font-size: 36px;
+    font-weight: 700;
+    color: #f7c631;
+    margin-top: 24px;
+    line-height: 40px;
+    text-wrap: nowrap;
+}
+
+.prize-text {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    line-height: 24px;
+}
+
+
+.prize{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(0, 0%, 93%);
+    padding: 20px;
+    margin: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 8px;
+}
