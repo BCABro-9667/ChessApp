@@ -5,7 +5,7 @@ import loader from '../component/img/spinner.gif';
 const UserTable = ({ users }) => {
   const [loading, setLoading] = useState(true); // State for loading
   const [currentPage, setCurrentPage] = useState(1);
-  const recordsPerPage = 10;
+  const [recordsPerPage, setRecordsPerPage] = useState(10); // State for records per page
 
   useEffect(() => {
     if (users.length > 0) {
@@ -26,6 +26,12 @@ const UserTable = ({ users }) => {
     setCurrentPage(pageNumber);
   };
 
+  // Handle records per page change
+  const handleRecordsPerPageChange = (event) => {
+    setRecordsPerPage(parseInt(event.target.value, 10));
+    setCurrentPage(1); // Reset to the first page whenever the records per page change
+  };
+
   // Display loader while data is fetching
   if (loading) {
     return (
@@ -41,6 +47,26 @@ const UserTable = ({ users }) => {
       <div className="heading">
         <h2 className="text-center">Registered Users</h2>
       </div>
+
+      {/* Dropdown to select the number of rows per page */}
+      <div className="d-flex  align-items-center range-container" >
+        <div className="range">
+          <label htmlFor="recordsPerPage" className="mr-2">Rows per page:</label>
+          <select
+            id="recordsPerPage"
+            value={recordsPerPage}
+            onChange={handleRecordsPerPageChange}
+            className="form-control w-auto"
+          >
+            <option value={10}>10 + </option>
+            <option value={20}>20</option>
+            <option value={30}>30</option>
+            <option value={40}>40</option>
+            <option value={50}>50</option>
+          </select>
+        </div>
+      </div>
+
       <table className="table mt-3 border">
         <thead>
           <tr>
