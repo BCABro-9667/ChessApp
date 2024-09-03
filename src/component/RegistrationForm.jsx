@@ -138,7 +138,7 @@ const RegistrationForm = ({ onSubmit }) => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="email" className="form-label"> <FontAwesomeIcon icon={faEnvelope} className='faicon' /> Email ID  (Optional)</label>
+              <label htmlFor="email" className="form-label"> <FontAwesomeIcon icon={faEnvelope} className='faicon' /> Email ID </label>
               <input
                 id="email"
                 placeholder="Enter your email address"
