@@ -122,7 +122,7 @@ const ChessProfile = () => {
 
       <div className="capsules">
         <button className='capsule' onClick={() => handleCapsuleClick('avdhesh_bcaa')}>Avdhesh Kumar</button>
-        <button className='capsule' onClick={() => handleCapsuleClick('gukesh_brother')}>Ayush Saini</button>
+        <button className='capsule' onClick={() => handleCapsuleClick('gukesh_coach')}>Ayush Saini</button>
         <button className='capsule' onClick={() => handleCapsuleClick('Hikaru')}>Hikaru</button>
         <button className='capsule' onClick={() => handleCapsuleClick('MagnusCarlsen')}>MagnusCarlsen</button>
         <button className='capsule' onClick={() => handleCapsuleClick('samayraina')}>samayraina</button>
