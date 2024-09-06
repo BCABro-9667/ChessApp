@@ -25,19 +25,33 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-
 }
 
 @media (min-width: 1024px) {
     .chess-piece {
         flex: 0 0 calc(33.333% - 20px); /* Three per row with some spacing */
         margin-right: 20px;
-        width: 100%;
     }
 
     .chess-piece:nth-child(3n) {
         margin-right: 0; /* Remove margin for every 3rd element */
     }
+}
 
-   
+@media (max-width: 768px) {
+    .chess-piece {
+        flex: 0 0 calc(50% - 20px); /* Two per row for tablets */
+        margin-right: 20px;
+    }
+
+    .chess-piece:nth-child(2n) {
+        margin-right: 0; /* Remove margin for every 2nd element */
+    }
+}
+
+@media (max-width: 480px) {
+    .chess-piece {
+        flex: 0 0 100%; /* Full width for mobile devices */
+        margin-right: 0;
+    }
 }

@@ -23,7 +23,7 @@ function ChessThinking() {
       <div className="container why-chess-container">
         <div className="why-chess">
           <div className="heading">
-            <h2>Why Chess</h2>
+            <h2>Why <span style={{color: '#6a9a3b'}}>Chess</span></h2>
           </div>
           <div className="why-chess-box-container">
             {/* Map through the array to display each piece */}
