@@ -14,7 +14,7 @@ function IndianGM() {
   return (
     <div className="container">
       <div className="grandmasters-container">
-      <div className="heading"><h2>Indian Grandmaster's</h2></div>
+      <div className="heading"><h2>Indian <span style={{color: '#6a9a3b'}}>Grandmaster's</span></h2></div>
         <div className="grandmaster">
           <div className="gm gm1"><img src={vishyAnand} alt="Vishy Anand" /> <span><a target="_blank" href="https://en.wikipedia.org/wiki/Viswanathan_Anand">GM VishwNath Anand</a></span></div>
           <div className="gm gm4"><img src={prag} alt="Prag" /><span><a target="_blank" href="https://en.wikipedia.org/wiki/R_Praggnanandhaa">GM R. Praggnanandhaa	</a></span></div>
