@@ -3,6 +3,7 @@ import  './stylesheet/global.css'
 import IndianGMOhotos from './other_comp/IndianGM'
 import TournmentBanner from './other_comp/TournmentBanner'
 import chess from './img/chess.png'
+import ChessThinking from './ChessThinking'
 // import DateTime from './other_comp/DateTime'
 
 function Home() {
@@ -22,6 +23,8 @@ function Home() {
           <a href="https://chess.com/" target='_blank'><button  >Play Online</button></a>
       </div>
     </div>
+    <ChessThinking/>
+
     <TournmentBanner/>
     <IndianGMOhotos/>
     </>

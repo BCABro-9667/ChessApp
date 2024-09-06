@@ -1,0 +1,39 @@
+.chess-piece {
+    padding: 30px 20px;
+    box-shadow: #8d8d8d40 0px 0px 19px 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 310px;
+    cursor: pointer;
+}
+
+.chess-piece img {
+    margin: 5px 0;
+}
+
+.chess-piece h5 {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.chess-piece p {
+    margin: 5px 0;
+}
+
+.why-chess-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+    .chess-piece {
+        flex: 0 0 calc(33.333% - 20px); /* Three per row with some spacing */
+        margin-right: 20px;
+    }
+
+    .chess-piece:nth-child(3n) {
+        margin-right: 0; /* Remove margin for every 3rd element */
+    }
+}
